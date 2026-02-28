@@ -1,0 +1,65 @@
+/* Tailwind CSS */
+@import "tailwindcss";
+
+/* Montserrat Font */
+@font-face {
+  font-weight: 100;
+  font-family: Montserrat;
+  src: url(./assets/fonts/Montserrat/MontserratThin.ttf);
+}
+
+@font-face {
+  font-weight: 200;
+  font-family: Montserrat;
+  src: url(./assets/fonts/Montserrat/MontserratExtraLight.ttf);
+}
+
+@font-face {
+  font-weight: 300;
+  font-family: Montserrat;
+  src: url(./assets/fonts/Montserrat/MontserratLight.ttf);
+}
+
+@font-face {
+  font-weight: 400;
+  font-family: Montserrat;
+  src: url(./assets/fonts/Montserrat/MontserratRegular.ttf);
+}
+
+@font-face {
+  font-weight: 500;
+  font-family: Montserrat;
+  src: url(./assets/fonts/Montserrat/MontserratMedium.ttf);
+}
+
+@font-face {
+  font-weight: 600;
+  font-family: Montserrat;
+  src: url(./assets/fonts/Montserrat/MontserratSemiBold.ttf);
+}
+
+@font-face {
+  font-weight: 700;
+  font-family: Montserrat;
+  src: url(./assets/fonts/Montserrat/MontserratBold.ttf);
+}
+
+@font-face {
+  font-weight: 800;
+  font-family: Montserrat;
+  src: url(./assets/fonts/Montserrat/MontserratExtraBold.ttf);
+}
+
+@font-face {
+  font-weight: 900;
+  font-family: Montserrat;
+  src: url(./assets/fonts/Montserrat/MontserratBlack.ttf);
+}
+
+/* Body */
+body {
+  font-family: "Montserrat";
+  user-select: none;
+}
+
+
