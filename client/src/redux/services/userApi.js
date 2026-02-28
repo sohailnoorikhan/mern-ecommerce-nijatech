@@ -4,7 +4,7 @@ import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 export const userApi = createApi({
   reducerPath: "userApi",
   baseQuery: fetchBaseQuery({
-    baseUrl: "http://localhost:3000/api",
+    baseUrl: import.meta.env.VITE_API_URL || "http://localhost:3000/api",
     prepareHeaders: (headers, { getState }) => {
       const token = getState().auth.userInfo?.token;
       const backupToken = JSON.parse(localStorage.getItem("userInfo"))?.token;

@@ -1,12 +1,11 @@
-// productApi.js
+// Redux
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 
 export const productApi = createApi({
   reducerPath: "productApi",
-  baseQuery: fetchBaseQuery({ 
-    baseUrl: "http://localhost:3000/api",
+  baseQuery: fetchBaseQuery({
+    baseUrl: import.meta.env.VITE_API_URL || "http://localhost:3000/api",
     prepareHeaders: (headers) => {
-      // LocalStorage-dən userInfo-nu götürürük
       const userInfo = JSON.parse(localStorage.getItem("userInfo"));
       if (userInfo?.token) {
         headers.set("authorization", `Bearer ${userInfo.token}`);
@@ -14,19 +13,18 @@ export const productApi = createApi({
       return headers;
     },
   }),
-  tagTypes: ["Product"], // Cache-i avtomatik yeniləmək üçün
+  tagTypes: ["Product"],
   endpoints: (builder) => ({
     getProducts: builder.query({
       query: () => "/products",
-      providesTags: ["Product"], // Məlumat çəkiləndə işarələyirik
+      providesTags: ["Product"],
     }),
-    // Məhsul silmək üçün yeni mutation
     deleteProduct: builder.mutation({
       query: (id) => ({
         url: `/products/${id}`,
         method: "DELETE",
       }),
-      invalidatesTags: ["Product"], // Silinəndən sonra siyahını avtomatik təzələyir
+      invalidatesTags: ["Product"],
     }),
     getCategoryCounts: builder.query({
       query: () => "/products/category-counts",
@@ -40,23 +38,23 @@ export const productApi = createApi({
         method: "POST",
         body: newProduct,
       }),
-      invalidatesTags: ["Product"], // Siyahını avtomatik yeniləyir
+      invalidatesTags: ["Product"],
     }),
     updateProduct: builder.mutation({
-  query: ({ id, ...rest }) => ({
-    url: `/products/${id}`,
-    method: "PUT",
-    body: rest,
-  }),
-  invalidatesTags: ["Product"],
-}),
+      query: ({ id, ...rest }) => ({
+        url: `/products/${id}`,
+        method: "PUT",
+        body: rest,
+      }),
+      invalidatesTags: ["Product"],
+    }),
   }),
 });
 
-export const { 
-  useGetProductsQuery, 
-  useDeleteProductMutation, // Bunu əlavə etdik
-  useGetCategoryCountsQuery, 
+export const {
+  useGetProductsQuery,
+  useDeleteProductMutation,
+  useGetCategoryCountsQuery,
   useGetProductByIdQuery,
   useCreateProductMutation,
   useUpdateProductMutation,
