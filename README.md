@@ -1,6 +1,6 @@
 **🚀 Nijatech – Full Stack Technology E-Commerce Platform**  
-**📌 Project Overview**
 
+**📌 Project Overview**  
 **Nijatech** is a full-stack MERN-based technology e-commerce platform built from scratch.  
 The platform allows users to explore and purchase laptops, computers, monitors, keyboards, and various tech accessories.
 
@@ -10,7 +10,7 @@ This project was designed and developed entirely by me — including frontend ar
 
 **🛠 Tech Stack**
 
-**🎨 Frontend**  
+**🎨 Frontend**
 * React
 * Tailwind CSS
 * React Router
@@ -24,7 +24,7 @@ This project was designed and developed entirely by me — including frontend ar
 * SweetAlert2
 * Lucide React
 
-**⚙ Backend**  
+**⚙ Backend**
 * Node.js
 * Express.js
 * MongoDB
@@ -37,7 +37,7 @@ This project was designed and developed entirely by me — including frontend ar
 * CORS
 * Dotenv
 
-**🔐 Authentication & Authorization**  
+**🔐 Authentication & Authorization**
 * JWT-based authentication (stored in localStorage)
 * Password hashing with bcrypt
 * Role-based access control (admin / user)
@@ -49,12 +49,12 @@ This project was designed and developed entirely by me — including frontend ar
 * email verification link
 
 **Middleware Structure**  
-protect → verifies token & attaches user
-isAdmin → allows admin-only access
+* protect → verifies token & attaches user  
+* isAdmin → allows admin-only access
 
 **🛒 E-Commerce Features**  
-**👤 User Features**
 
+**👤 User Features**
 * Register / Login / Logout
 * Profile update (including avatar upload)
 * Browse products
@@ -65,7 +65,7 @@ isAdmin → allows admin-only access
 * Order history
 * Cancel non-delivered orders
 
-**🧾 Order System**  
+**🧾 Order System**
 * Each order linked to authenticated user
 * Order status tracking (processing, delivered)
 * Address & phone required
@@ -74,14 +74,13 @@ isAdmin → allows admin-only access
 * View all orders
 * View total sales statistics
 
-**📦 Order Model Highlights**  
+**📦 Order Model Highlights**
 * Linked to user (ObjectId reference)
 * Stores order items snapshot
 * Delivery & payment tracking
 * Timestamps enabled
 
 **📊 Admin Dashboard**  
-Fully custom built admin panel including:  
 📈 Order statistics  
 💰 Total sales calculation (paid orders)  
 👥 User management  
@@ -94,7 +93,8 @@ Fully custom built admin panel including:
 Dashboard includes data visualization using Recharts.
 
 **🖼 Main Pages**  
-**Public Pages**  
+
+**Public Pages**
 * Home
 * Products
 * Product Details
@@ -105,18 +105,18 @@ Dashboard includes data visualization using Recharts.
 * Warranty
 * Delivery & Payment
 
-**Auth Pages**  
+**Auth Pages**
 * Login / Register
 * Forgot Password
 * Reset Password
 
-**User Pages**  
+**User Pages**
 * Profile
 * Wishlist
 * Checkout
 * Order Success
 
-**Admin Pages**  
+**Admin Pages**
 * Dashboard
 * Users
 * Orders
@@ -125,7 +125,7 @@ Dashboard includes data visualization using Recharts.
 * Help Center
 * Notifications
 
-**🔒 Security Highlights**  
+**🔒 Security Highlights**
 * Hashed passwords
 * Protected API routes
 * Admin role enforcement
@@ -133,7 +133,7 @@ Dashboard includes data visualization using Recharts.
 * JWT verification middleware
 * Reset password token expiration lo
 
-**📈 Business Logic Highlights**  
+**📈 Business Logic Highlights**
 * Order snapshot structure (price preserved even if product changes)
 * Paid-only sales aggregation
 * Delivery status tracking
